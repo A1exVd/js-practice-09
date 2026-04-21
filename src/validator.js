@@ -21,6 +21,7 @@ validate();
 
 async function validate() {
     try {
+        // асинхронный метод, используется для чтения данных из файла.
         const data = await fs.readFile(pathDbFile, 'utf8');
         
         const dataArr = JSON.parse(data);
